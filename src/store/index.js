@@ -1,10 +1,7 @@
 import { legacy_createStore as createStore } from 'redux';
 
-const reducer = (state, action) => {
-  console.log(action);
-  return state;
-};
+import rootReducer from './modules/rootReducer';
 
-const store = createStore(reducer);
+const store = createStore(rootReducer);
 
 export default store;
